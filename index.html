@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADgCAMAAADCMfHtAAAAdVBMVEX///8AAADm5ubu7u7r6+v7+/usrKx1dXX4+PiCgoLV1dW7u7vIyMi1tbVycnLy8vKenp7f39+MjIxISEg4ODgmJiZlZWVgYGBsbGzCwsKWlpbY2NhOTk7R0dGkpKRCQkIfHx87OzuBgYFWVlYODg4XFxcwMDCcvMEAAAAGQ0lEQVR4nO2d6VryMBCFDUjZLJRFoEU2Be//Ej8KH1DaJqUwJzPmyfvbR+eYZpkteXvzeDwej8fj8Xg8HkcZhePZdMBtBYpmMFcnJtyWQGgFG3Vhym0MgFFbZfjkNoec3pdSLisc5fS59pV2Bnl9jq00YVGfUjNuq+jo/JQJVF1uu8hYlepTas1tGBVrjUD1wW0ZEW2dQNXkNo2GuVag4jaNBoPABbdtJCz0AlXIbRwFY4NANeS2joDSff7Chts6AkYmgSrgNo+AvVFhi9u81zGtMkq1uc17ndgoUDW47Xsds8A5t3mv03V9CBtmgQ4EEg2ntZQOt30vY94KXdgLzUO44zbvdd7NQ+iAY2g8cTvhVBgFOrCOmo8zv9zWUVAS/b3x9zeKN/NH+vcPM0d6BoFLbuNIiPQCV9y20aDf7nvcphGhFTjitoyIjkbfwYGjzJllucAvbrvoKN/vE26zCCmLkh7c2CX+U5JNc2kA30oUzpxZYv6TU7hw4px2R5CR9xm5kH/J079+nYF7w3diGAZB+LHUeknDZRysoyQK4t67Tbsq6ayC8WxzOI3OdJb0nxmfRtid3M/S7TyJJegchu1DcQ+o9xUOQ71jvAhZl9v3aKo1bd99zB9qRDvt7zjzG3ENZX9SYZrqVvlEw/Vv1e84selbUXSPwZnNsE/0//9WWKhJNJBYzps+pu/8/w9K1854VkPeWaNFfcY6gxJ+wtwAfBhjblpsBYwbuyeM+7qurp2+OcltYmdlzUmeNW8/WMf98ab6B03gqxaHu9csfJkfsMAPZn1H9tAvtcYSCgQYeXxuBaQHVmBbXpPNAUhinRMIGkgOQM4IpgA86Oe3aQzkx9Sn93kU1EWoFcV2HNB2nVTUiLBAewz/5JZTYEE7D7+59RSISfUZs+8s7KiDySXBNFbIy6SlbRTkLuKQW1EO4il4pHbECAv9ibSi4tU2AN9Q1oEb4DbJGkJEjbSoWYjopmlyi8oCuYdA1F4IybNxi8oCaVQQEB69gmlUkBI+TMGUL3KryoDp75b0kWJi+YI8X1CLviDHEDMLBcWfQJcO9av/si1ATXuCpiGoyk9fDmQb1L1R3LpuRBiBglxDUC24oFwFRqCQpH0K6rIT/TVOtvkGKZQTg0KVCclJONEHgc9w67qBaqvh1nUDVAUlKF8BaoEW5FmAyoMFHWkwAnXtkByAFArKbbuvELTSCFII2i0EzUNQL7ugtRRUTlpxJ5dNQHEoQTv+GKNQdwECA6gOBG5dGdxXCNouHmsNtAKopUtOFAN1CZicSBRqIkqqw8DcsVS3jxIJ5uZd3cMFLEAUiqqHwhzcuFVl2UIUVvbb2wQSFRaUAwY9kBRU/12LIGaiIC8/BaBQ1FKDObrJKVU4AQhmVNyebh36qKKgkqET9NluQemnM/Tp7i23pDzk+W5pE5He2xdUUnOB+D6lFreeEohHUdI9Chdoi9y0r9txQrqiCkpeZJhQJvbllA3dQdiGKCngloUuWSPzMz1yIAswCv1Mj8yJshlyqkyLtEk0ioopFphTFPFL3PRvEAgU5yTeQXNJDbcKEzSVp/JcqCtEQVSxWyKdQywqun8HVWhKoB98hu6RefPDqHzQZYZlJTCubMkESt0wKHM1Mn0oQoEiI1LEt1+bny3kgbZHQVCh4gXqkkx5M5E8EcUtKA99Va20yCmgU0jWwQbR3S3rdAoQKMvFwLzoIchPRD39LGfbhz0IKWWxQXWvy6k4hQmUUvoNezgghVtcCl3sogwJTYngZ5H411PoN5rCXc2HW0cvMOeiIKXCOXgzNVZehuTcMkDdpHn4mtqwG8UNtql4sCSQ705Mi8+z8sSlrD7zOGcQSPvsSiX2Vxvbb8xbDxFvLQu0H9NgeOPabs8QyyvXNj1+1H1mYiQCXzw0Y8sfhoXWqqmx3Py21/GymSaMWs1lHA1qNKuwvj/eeWhfnCarYuihE3cfik5uLD/mXKDy6v1JoF/oR0nlleGgu2nqYPaIk6pHKXpGd/PAtsZk6Wgff1w8FDVqBdrYD+iG5Posy65BKTzGbaARlc1nMfpSRrkSzXa/7vrQDAd3C08bHjWszXI92GzVdrNI4meX9+EqSL4Hg27UZzmkeTwej8fj8Xg8Hk85/wBgJnbcB+x7RgAAAABJRU5ErkJggg==">
+    <title>Apple(India)</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            outline: 0px;
+            box-sizing: border-box;
+        }
+        .up {
+            width: 100%;
+            height: 6vh;
+            background-color: #FAFAFC;
+           
+        }
+        .te {
+            display: flex;
+            width: 70%;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            margin: auto;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+            color: #424242;
+        }
+
+        .te .ss:hover {
+            cursor: pointer;
+        }
+
+        .te img {
+            width: 1%;
+            height: 2%px;
+            cursor: pointer;
+        }
+
+        .sto {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .re {
+            width: 4306%;
+            height: 0vh;
+            background-color: rgb(245, 245, 236);
+            position: absolute;
+            left: -820%;
+            overflow: hidden;
+            transition: 1s;
+            }
+
+        .sto:hover .re {
+            display: block;
+            height: 55vh;
+        }
+
+        .shdm {
+
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            height: 10vh;
+            align-items: center;
+            font-size: 15px;
+            font-family: 100;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .spp {
+
+            font-size: 22px;
+            position: absolute;
+            top: 200%;
+            color: rgb(13, 12, 12);
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 520%;
+            word-spacing: 3px;
+        }
+
+        .ssp {
+            position: relative;
+            color: #6C6C6E;
+
+
+        }
+
+        .ssp a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .qu {
+            position: relative;
+        }
+
+        .qui {
+            font-size: 15px;
+            position: absolute;
+            top: 200%;
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 520%;
+            word-spacing: 3px;
+        }
+
+        .sp {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .spe {
+            font-size: 15px;
+            position: absolute;
+            top: 200%;
+            color: rgb(3, 3, 3);
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 520%;
+            word-spacing: 3px;
+        }
+
+        .spe a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .qui a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .mac {
+            position: relative;
+            color: #000000;
+            cursor: pointer;
+        }
+
+        .macb {
+            width: 5483%;
+            height: 0vh;
+            background-color: rgb(254, 230, 230);
+            position: absolute;
+            left: -1320%;
+            transition: 1s;
+            overflow: hidden;
+           
+        }
+        .mac:hover .macb{
+            height: 70vh;
+            display: block;
+
+        }
+        .macbo {
+            width: 50%;
+            height: 85%;
+            height: 4.6vh;
+            margin-left: 15%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3%;
+        }
+        
+        .std {
+            margin-top: 6%;
+            font-size: 26px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            word-spacing: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            margin-left: 1%;
+            width: 110%;
+           }
+        .std a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .compare {
+            width: 40%;
+            font-size: 11px;
+            display: flex;
+            flex-direction: column;
+            height: 4.6vh;
+            justify-content: space-between;
+            margin-top: 7%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+
+        .shop {
+            margin-top: 10%;
+            width: 52%s;
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            word-spacing: 2px;
+            color: #353537;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 10px;
+        }
+        .shop a{
+            text-decoration: none;
+            color: black;
+        }
+        .more{
+            margin-top: 10%;
+            width: 52%s;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            word-spacing: 2px;
+            color: #353537;
+            font-family: Arial, Helvetica, sans-serif;
+           gap: 10px;
+
+        }
+        .more a{
+            text-decoration: none;
+            color: #353537;
+
+        }
+        .sp{
+            position: relative;
+            cursor: pointer;
+        }
+        .ip{
+            width: 5206%;
+            height: 0vh;
+            background-color: rgb(188, 255, 204);
+            position: absolute;
+            left: -1480%;
+           overflow: hidden;
+            transition: 1s;
+           
+        }
+        .sp:hover .ip{
+            display: block;
+            height: 60vh;
+        }
+        .ips{
+            width: 60%;
+            height: 90%;
+           
+            margin-left: 15%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2%;
+            
+        }
+        .pad{
+            margin-top: 10%;
+            width: 52%s;
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            word-spacing: 2px;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 13px;
+            font-weight: 600;
+            font-size: 22px;
+        }
+        .pad a{
+            text-decoration: none;
+            color: black;
+        }
+        .ipad{
+            width: 50%;
+            font-size: 11.7px;
+            display: flex;
+            flex-direction: column;
+            height: 4.6vh;
+            justify-content: space-between;
+            margin-top: 7%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            gap: 8px;
+
+        }
+        .sip{
+            margin-top: 8%;
+            width: 100%;
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            word-spacing: 2px;
+            color: #353537;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 10px;
+        }
+        .sip a{
+            text-decoration: none;
+            color: #353537;
+        }
+        .mip{
+            margin-top: 10%;
+            width: 52%s;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            word-spacing: 2px;
+            color: #353537;
+            font-family: Arial, Helvetica, sans-serif;
+           gap: 13px;
+           font-weight: 500;
+        }
+        .mip a{
+            text-decoration: none;
+            color: #353537;
+        }
+        .sss{
+            position: relative;
+            cursor: pointer;
+        }
+        .ipn{
+            width: 3739%;
+            height: 0vh;
+            background-color: rgb(193, 217, 252);
+            position: absolute;
+            left: -1480%;
+            transition: 1s;
+            overflow: hidden;
+            
+            
+        }
+        .sss:hover .ipn{
+            height: 60vh;
+            display: block;
+        }
+
+        .iphn{
+            width: 40%;
+            height: 90%;
+          
+            margin-left: 22%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2%;
+        }
+        .exap{
+            
+            font-size: 22px;
+           
+            color: rgb(13, 12, 12);
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+           
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+           margin-top: 6%;
+            word-spacing: 3px;
+        }
+        .ci{
+            margin-top: 9%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 13px;
+        }
+        .exap a{
+            text-decoration: none;
+            color: black;
+        }
+        .ci a{
+            text-decoration: none;
+            color: black;
+        }
+        .sine{
+            margin-top: 10%;
+            width: 100%;
+            
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            word-spacing: 2px;
+            color: #353537;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 10px;
+        }
+        .sine a{
+            text-decoration: none;
+            color: #353537;
+
+        }
+        .fip{
+            margin-top: 10%;
+            width: 100%;
+            
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            word-spacing: 2px;
+            color: #353537;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 10px;
+        }
+        .fip a{
+            text-decoration: none;
+            color: #353537;
+        }
+        .wa{
+            position: relative;
+            cursor: pointer;
+        }
+        .wat{
+            width: 3804%;
+            height: 0vh;
+            background-color: rgb(194, 180, 246);
+            position: absolute;
+            left: -1480%;
+            transition: 1s;
+            overflow: hidden;
+
+        }
+        .wa:hover .wat{
+            height: 65vh;
+            display: block;
+        }
+        .watc{
+            width: 60%;
+            height: 90%;
+         
+            margin-left: 18%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2%;
+        }
+        .eaw{
+            width: 100%;
+            font-size: 22px;
+           color: rgb(13, 12, 12);
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+           display: flex;
+            flex-direction: column;
+            gap: 13px;
+           margin-top: 6%;
+            word-spacing: 3px;
+            margin-left: 1%;
+        }
+        .comwat{
+            margin-top: 9%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 13px;
+            margin-left: 2%;
+        }
+        .eaw a{
+            text-decoration: none;
+            color:black;
+        }
+        .comwat a{
+            text-decoration: none;
+            color: #353537;
+        }
+        .shwa{
+            margin-top: 10%;
+           height: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            word-spacing: 2px;
+            color: #353537;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 13px;
+            font-weight: 500;
+        }
+        .shwa a{
+            text-decoration: none;
+            color: #353537;
+            
+        }
+        .frmwa{
+            
+            display: flex;
+            flex-direction: column;
+            margin-top: 10%;
+            gap: 13px;
+        }
+        .frmwa a{
+            text-decoration: none;
+            color: #353537;
+        }
+      .air{
+        position: relative;
+        cursor: pointer;
+      }
+      .pod{
+        width: 3050%;
+            height: 0vh;
+            background-color: rgb(246, 180, 221);
+            position: absolute;
+            left: -1480%;
+            transition: 1s;
+            overflow: hidden;
+
+      }
+      .air:hover .pod{
+        display: block;
+        height: 55vh;
+      }
+      .pods{
+        width: 60%;
+            height: 90%;
+         
+            margin-left: 18%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2%;
+      }
+      .expod{
+        width: 100%;
+            font-size: 22px;
+           color: rgb(13, 12, 12);
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+           display: flex;
+            flex-direction: column;
+            gap: 13px;
+           margin-top: 6%;
+            word-spacing: 3px;
+            margin-left: 1%;
+      }
+      .compod{
+        margin-top: 9%;
+            display: flex;
+            flex-direction: column;
+           
+            font-size: 13px;
+            margin-left: 2%;
+      }
+      .shpod{
+        margin-top: 10%;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            word-spacing: 2px;
+            color: #353537;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 13px;
+            font-weight: 500;
+
+      }
+      .mopod{
+        display: flex;
+            flex-direction: column;
+            margin-top: 10%;
+            gap: 13px
+      }
+      .expod a{
+        text-decoration: none;
+        color: black;
+      }
+      .compod a{
+        text-decoration: none;
+            color: #353537;
+
+      }
+      .shpod a{
+        text-decoration: none;
+            color: #353537;
+
+      }
+      .mopod a{
+        text-decoration: none;
+            color: #353537;
+      }
+      .sst{
+        position: relative;
+        cursor: pointer;
+      }
+      .tv{
+        width: 2466%;
+            height: 0vh;
+            background-color: rgb(175, 238, 251);
+            position: absolute;
+            left: -1480%;
+            overflow: hidden;
+            transition: 1s;
+    }
+      .sst:hover .tv{
+        height: 50vh;
+        display: block;
+      }
+      .ttv{
+        width: 60%;
+            height: 60%;
+       
+            margin-left: 30%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2%;
+      }
+      .extv{
+        width: 100%;
+            font-size: 22px;
+           color: rgb(13, 12, 12);
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+           display: flex;
+            flex-direction: column;
+            gap: 13px;
+           margin-top: 6%;
+            word-spacing: 3px;
+            margin-left: 1%
+      }
+      .extv a{
+        text-decoration: none;
+        color: black;
+      }
+      .shtv{
+        margin-top: 13%;
+           display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            word-spacing: 2px;
+            color: #353537;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 10px;
+            font-weight: 500;
+      }
+      .shtv a{
+        text-decoration: none;
+            color: #353537;
+      }
+      .motv{
+        margin-top: 13%;
+           
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           word-spacing: 2px;
+           color: #353537;
+           font-family: Arial, Helvetica, sans-serif;
+           gap: 10px;
+           font-weight: 500
+      }
+      .motv a{
+        text-decoration: none;
+            color: #353537;
+      }
+      .sstt{
+        position: relative;
+        cursor: pointer;
+      }
+      
+      .exent{
+            width: 2195%;
+            height: 0vh;
+            background-color: rgb(255, 169, 169);
+            position: absolute;
+            left: -1480%;
+            transition: 1s;
+            overflow: hidden;
+            
+      }
+      .sstt:hover .exent{
+        height: 70vh;
+        display: block;
+      }
+      .expentt{
+        width: 30%;
+            height: 90%;
+      
+            margin-left: 33%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2%;
+      }
+      .exment a{
+        text-decoration: none;
+        color: black;
+
+      }
+      .exment{
+        width: 100%;
+        font-size: 22px;
+           color: rgb(13, 12, 12);
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+           display: flex;
+            flex-direction: column;
+            gap: 13px;
+           margin-top: 5%;
+            word-spacing: 3px;
+            margin-left: 1%;
+      }
+      .supp{
+        display: flex;
+            flex-direction: column;
+            margin-top: 10%;
+            gap: 13px
+      }
+      .supp a{
+        text-decoration: none;
+        color: #353537;
+      }
+      .as{
+        position: relative;
+        cursor: pointer;
+      }
+      .ass{
+        width: 2110%;
+            height: 0vh;
+            background-color: rgba(186, 255, 158, 0.993);
+            position: absolute;
+            left: -1480%;
+            transition: 1s;
+            overflow: hidden;
+      }
+      .as:hover .ass{
+        height: 57vh;
+        display: block;
+      }
+      .asss{
+        width: 40%;
+            height: 90%;
+          
+            margin-left: 25%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2%;
+      }
+      .shass{
+        width: 100%;
+            font-size: 22px;
+           color: rgb(13, 12, 12);
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+           display: flex;
+            flex-direction: column;
+            gap: 13px;
+           margin-top: 6%;
+            word-spacing: 3px;
+            margin-left: 1%
+      }
+      .shass a{
+        text-decoration: none;
+        color: black;
+      }
+      .exass{
+        display: flex;
+            flex-direction: column;
+            margin-top: 10%;
+            gap: 13px
+      }
+      .exass a{
+        text-decoration: none;
+        color: #353537;
+
+      }
+      .spt{
+        position: relative;
+        cursor: pointer;
+      }
+      .supp{
+        width: 3030%;
+            height: 0vh;
+            background-color: rgba(255, 251, 130, 0.993);
+            position: absolute;
+            left: -2280%;
+            transition: 1s;
+            overflow: hidden;
+           top: 70%;
+      }
+      .insupp{
+        width: 45%;
+            height: 90%;
+         
+            margin-left: 20%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2%;
+      }
+      .spt:hover .supp{
+        height: 60vh;
+        display: block;
+      }
+      .suppiphn{
+        width: 100%;
+            font-size: 22px;
+           color: rgb(13, 12, 12);
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+           display: flex;
+            flex-direction: column;
+            gap: 11px;
+           margin-top: 23%;
+            word-spacing: 3px;
+            margin-left: 1%
+      }
+      .smbox{
+        width: 90%;
+            font-size: 11px;
+            display: flex;
+            flex-direction: column;
+            height: 4.6vh;
+            justify-content: space-between;
+            margin-top: 7%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            margin-top: 32%;
+           }
+      .gethlp{
+        margin-top: 25%;
+           
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           word-spacing: 2px;
+           color: #353537;
+           font-family: Arial, Helvetica, sans-serif;
+           gap: 13px;
+           font-weight: 500;
+      }
+      .heltop{
+        margin-top: 25%;
+           
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           word-spacing: 2px;
+           color: #353537;
+           font-family: Arial, Helvetica, sans-serif;
+           gap: 13px;
+           font-weight: 500;
+      }
+      .suppiphn a{
+        text-decoration: none;
+        color: black;
+      }
+      .smbox{
+        text-decoration: none;
+        color: black;
+      }
+      .gethlp{
+        text-decoration: none;
+        color: #353537;
+      }
+      .heltop{
+        text-decoration: none;
+        color: #353537;
+      }
+      .sea{
+        position: relative;
+    cursor: pointer;
+    }
+    .searchhh{
+        width: 10280%;
+            height: 0vh;
+            background-color: rgb(211, 211, 209);
+            position: absolute;
+            left: -8219%;
+            overflow: hidden;
+            transition: 1s;
+    }
+    .sea:hover .searchhh{
+        height: 60vh;
+        display: block;
+    }
+    .searchhh input{
+       width: 60%;
+       height: 10vh;
+       margin-left: 15%;
+       margin-top: 5%;
+       border: 1px solid white;
+       padding-left: 2%;
+       font-size: 25px;
+       font-weight: 700;
+       border-radius: 1ic;
+       
+    }
+    .searchhh ::placeholder{
+        font-size: 25px;
+       padding-left: 2%;
+       font-weight: 700;
+       font-family: Arial, Helvetica, sans-serif;
+    }
+    .quilink{
+        margin-left: 15%;
+        margin-top: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+     }
+    .arrow{
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        margin-left: 14.5%;
+        margin-top: 3%;
+        gap: 14px;
+    }
+    .arrow .ar{
+        font-size: 10px;
+        padding: 0px 9px;
+    }
+    .arrow a{
+        text-decoration: none;
+        color: #505051;
+    }
+    .arrow div:hover{
+        border: 1px solid white;
+        background-color: #ffffff;
+        border-radius: 1ic;
+    }
+    .bag{
+        position: relative;
+cursor: pointer;
+    }
+    .bag:hover .bags{
+        height: 60vh;
+        display: block;
+    }
+    .bags{
+        width: 11748%;
+            height: 0vh;
+            background-color: rgb(219, 216, 216);
+            position: absolute;
+            left: -9759%;
+           overflow: hidden;
+           transition: 1s;
+    }
+    .h1{
+        margin-left: 10%;
+        margin-top: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+    .siin{
+        margin-left: 10%;
+        margin-top: 2%;
+        font-weight: 100;
+        color: #6C6C6E;
+    }
+    .mypro{
+        margin-left: 10%;
+        margin-top: 1%;
+        color: #6C6C6E;
+    }
+    .order{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 2%;
+    }
+    .order .fat{
+       padding: 0px 15px;
+        font-size: 10px;
+        color: rgb(118, 118, 118);
+    }
+    .order .orte{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .order a{
+        text-decoration: none;
+        color: black;
+    }
+    .name .e{
+   font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+  font-weight: 700;
+    letter-spacing: 2px;
+    margin-left: 85%;
+   }
+  .mid{
+    height: 75vh;
+    width: 100%;
+    background-color: #F2F2F4;
+   }
+  .midtext{
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+   margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    height: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 3%;
+   }
+  .midtext .ab{
+    font-size: 55px;
+    font-weight: 700;
+    width: 70%;
+   }
+  .ab p{
+   margin-left: 25%;
+  }
+  .midtext .abc{
+    font-size: 20px;
+  }
+  .midtext .abcd{
+    color:#0066CC;
+  }
+  .video{
+    width: 35%;
+    height: 50%;
+  
+    margin: auto;
+  }
+  .video video{
+    width: 100%;
+    height: 100%;
+  }
+  .macbook{
+    width: 100%;
+    height: 17vh;
+    background-color: #fbfbff;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  .macbook div{
+    margin-top: 4%;
+  }
+  .mcpho{
+    width: 100%;
+    height: 100vh;
+    background-color: #fcfcff;
+  }
+  #a{
+    width: 14%;
+    height: 5vh;
+   font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    color: #0066CC;
+    font-weight: 100;
+    align-items: center;
+   
+  }
+  #a .a{
+    font-size: 18px;
+    padding-left: 5px;
+  }
+  #b{
+    width: 100%;
+    height: 40vh;
+    background-color: #6C6C6E;
+    margin-top: 6%;
+  }
+  #b img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  #c{
+    width: 100%;
+    height: 80vh;
+    background-color: #F2F2F4;
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  #c div{
+    width: 49.5%;
+    height: 100%;
+   }
+  #c img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+  .cro{
+    margin-top: 27%;
+    height: 77vh;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+    }
+  .crocs{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    justify-content: space-between;
+   
+
+  }
+  .lef{
+    width: 19%;
+    height: 90%;
+    background-color: #3e3e87;
+  }
+  .midf{
+    width: 60%;
+    height: 90%;
+   }
+ .ri8{
+    width: 19%;
+    height: 90%;
+    background-color: navajowhite;
+ }
+ .lef img{
+    width: 100%;
+    height: 100%;
+
+ }
+ .midf img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1ic;
+
+ }
+ .ri8 img{
+    width: 100%;
+    height: 100%;}
+.radio{
+    display: flex;
+ margin-left: 35%;
+    justify-content: space-around;
+    width: 30%;
+    align-items: center;
+    margin-top: -3%;
+}
+
+</style>
+</head>
+<body>
+    <div class="up">
+        <div class="te">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="">
+            <div class="sto">Store
+                <div class="re">
+                    <div class="shdm">
+                        <div class="ssp">Shop
+                            <div class="spp">
+                                <div><a href="https://www.apple.com/store">Shop the latest</div></a>
+                                <div> <a href="https://www.apple.com/shop/buy-mac">Mac</div></a>
+                                <div> <a href="https://www.apple.com/shop/buy-ipad">ipad</div></a>
+                                <div> <a href="https://www.apple.com/shop/buy-iphone">iPhone</div></a>
+                                <div> <a href="https://www.apple.com/shop/buy-watch">Apple Watch</div></a>
+                                <div> <a href="https://www.apple.com/shop/accessories/all">Accessories</div></a>
+                            </div>
+                        </div>
+                        <div class="qu">Quick
+                            <div class="qui">
+                                <div> <a href="https://www.apple.com/retail/">Find a store</div></a>
+                                <div><a
+                                        href="https://secure6.store.apple.com/shop/signIn/orders?ssi=1AAABimma13AgueMWoL4wSSKsBULWXr1UJlcabO9jBo7lel04DtuICe4AAAAxaHR0cHM6Ly9zZWN1cmU2LnN0b3JlLmFwcGxlLmNvbS9zaG9wL29yZGVyL2xpc3R8fAACAdjMsKm30tvto4RoZE8MdY82sIR-gK_CBdI--RiMT9jJ">Order
+                                        Status</div></a>
+                                <div><a href="https://www.apple.com/shop/trade-in">Apple Trade In</div></a>
+                                <div><a href="https://www.apple.com/us-edu/shop/back-to-school">Financing</div></a>
+                                <div><a href="https://www.apple.com/us-edu/shop/back-to-school">Collage Student Offer
+                                </div></a>
+                            </div>
+                        </div>
+                        <div class="sp">Shop Special Stores
+                            <div class="spe">
+                                <div> <a href="https://www.apple.com/shop/refurbished">Certified Refurbished</div></a>
+                                <div> <a href="https://www.apple.com/us-edu/store">Education</div></a>
+                                <div> <a href="https://www.apple.com/retail/business/">Business</div></a>
+                                <div> <a href="https://www.apple.com/us-edu/shop/browse/home/veterans_military">Veterans
+                                        and Military</div></a>
+                                <div><a href="https://www.apple.com/r/store/government/">Government</div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mac">Mac
+                <div class="macb">
+                    <div class="macbo">
+
+                        <div>Explore Mac
+                            <div class="std">
+                                <div> <a href="https://www.apple.com/mac/">Explore All Mac </div></a>
+                                <div> <a href="https://www.apple.com/macbook-air/">Macbook Air</div></a>
+                                <div> <a href="https://www.apple.com/macbook-pro/">MacBook Pro</div></a>
+                                <div><a href="https://www.apple.com/imac-24/">iMac</div></a>
+                                <div> <a href="https://www.apple.com/mac-mini/">Mac mini</div></a>
+                                <div> <a href="https://www.apple.com/mac-studio/">Mac Studio</div></a>
+                                <div> <a href="https://www.apple.com/mac-pro/">Mac Pro</div></a>
+                                <div> <a href="https://www.apple.com/displays/">Displays</div></a>
+                                <div class="compare">
+                                    <p> <a href="https://www.apple.com/mac/compare/">Compare Mac</p></a>
+                                    <p> <a href="https://www.apple.com/mac/mac-does-that/">Mac Does Not</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>Shop Mac
+                            <div class="shop">
+                                <div><a href="https://www.apple.com/shop/buy-mac">Shop Mac</div></a>
+                                <div> <a href="https://www.apple.com/shop/mac/accessories">Mac Accessories</div></a>
+                                <div> <a href="https://www.apple.com/shop/trade-in">Apple Trade In</div></a>
+                                <div> <a href="https://www.apple.com/shop/browse/financing">Financing</div></a>
+                                <div><a href="https://www.apple.com/us-edu/shop/back-to-school">College Student Offer</div></a>
+                            </div>
+                        </div>
+                        <div>More From Mac
+                          <div class="more"><div><a href="https://support.apple.com/mac?cid=gn-ols-mac-psp-prodfly">Mac Support</div></a>
+                            <div> <a href="https://www.apple.com/macos/sonoma-preview/">macOS Sonoma Preview</div></a>
+                            <div><a href="https://www.apple.com/support/products/mac/">AppleCare+ for Mac</div></a>
+                            <div> <a href="https://www.apple.com/final-cut-pro/">Final Cut Pro</div></a>
+                            <div><a href="https://www.apple.com/logic-pro/">Logic Pro</div></a>
+                            <div><a href="https://www.apple.com/macos/continuity/">Continuity</div></a>
+                            <div><a href="https://www.apple.com/icloud/">iCloud+</div></a>
+                            <div><a href="https://www.apple.com/business/mac/">Mac for Business</div></a>
+                            <div><a href="https://www.apple.com/education/">Education</div></div></a>
+                 </div>
+        </div>
+                </div>
+            </div>
+            <div class="sp">iPad
+                <div class="ip">
+                    <div class="ips">
+                        <div>Explore iPad
+                         <div class="pad"><div><a href="https://www.apple.com/ipad/">Explore All iPad</div></a>
+                            <div><a href="https://www.apple.com/ipad-pro/">iPad Pro</div></a>
+                            <div><a href="https://www.apple.com/ipad-air/">iPad Air</div></a>
+                            <div><a href="https://www.apple.com/ipad-select/">iPad</div></a>
+                            <div><a href="https://www.apple.com/ipad-mini/">iPad mini</div></a>
+                            <div><a href="https://www.apple.com/apple-pencil/">Apple Pencil</div></a>
+                            <div><a href="https://www.apple.com/ipad-keyboards/">Keyboards</div></a>
+                            <div class="ipad">
+                                <p><a href="https://www.apple.com/ipad/compare/">Cpmpare iPad</p></a>
+                                <p><a href="https://www.apple.com/ipad/why-ipad/">Why iPad</p></a>
+                            </div>
+                        </div>
+                          </div>
+                        <div>Shop iPad
+                            <div class="sip">
+                            <div><a href="https://www.apple.com/ipad/">Shop iPad</div></a>
+                            <div><a href="https://www.apple.com/us-edu/shop/ipad/accessories">iPad Accessories</div></a>
+                            <div><a href="https://www.apple.com/us-edu/shop/trade-in">Apple Trade In</div></a>
+                            <div><a href="https://www.apple.com/us-edu/shop/browse/education_payment_plan">Financing</div></a>
+                            <div><a href="https://www.apple.com/us-edu/shop/back-to-school">College Student Offer</div></div></a>
+                        </div>
+                        <div>More from iPad
+                            <div class="mip">
+                            <div><a href="https://support.apple.com/ipad?cid=gn-ols-ipad-psp-prodfly">iPad Support</div></a>
+                            <div><a href="https://www.apple.com/ipados/ipados-17-preview/">iPadOS 17 Preview</div></a>
+                            <div><a href="https://www.apple.com/support/products/ipad/">AppleCare+ for iPad</div></a>
+                            <div><a href="https://www.apple.com/final-cut-pro-for-ipad/">Final Cut Pro for iPad</div></a>
+                            <div><a href="https://www.apple.com/logic-pro-for-ipad/">Logic Pro for iPad</div></a>
+                            <div><a href="https://www.apple.com/icloud/">iCloud+</div></a>
+                            <div><a href="https://www.apple.com/education/">Education</div></div></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="sss">iPhone
+                <div class="ipn">
+                    <div class="iphn">
+                        <div>Explore All iPhone
+                            <div class="exap">
+                            <div><a href="https://www.apple.com/iphone/">Explore All iPhone</div></a>
+                            <div><a href="https://www.apple.com/iphone-14-pro/">iPhone 14 Pro</div></a>
+                        <div><a href="https://www.apple.com/iphone-14/">iPhone 14</div></a>
+                        <div><a href="https://www.apple.com/shop/buy-iphone/iphone-13">iPhone 13</div></a>
+                        <div><a href="https://www.apple.com/shop/buy-iphone/iphone-12">iPhone 12</div></a>
+                        <div><a href="https://www.apple.com/iphone-se/">iPhone SE</div></a>
+                            </div>
+                            <div class="ci">
+                                <p><a href="https://www.apple.com/iphone/compare/">Compare iPhone</p></a>
+                                <div><a href="https://www.apple.com/iphone/switch/">Switch from Android</div></a>
+                            </div>
+                        </div>
+                        <div>Shop iPhone
+                            <div class="sine">
+                            <div><a href="https://www.apple.com/shop/buy-iphone">Shop iPhone</div></a>
+                            <div><a href="https://www.apple.com/shop/iphone/accessories">iPhone Accessories</div></a>
+                            <div><a href="https://www.apple.com/shop/trade-in">Apple Trade in</div></a>
+                            <div><a href="https://www.apple.com/shop/buy-iphone/carrier-offers">Carrier Deals at Apple</div></a>
+                            <div><a href="https://www.apple.com/shop/browse/financing">Financing</div></div></a>
+                        </div>
+                        <div>More from iPhone
+                            <div class="fip">
+                            <div><a href="https://support.apple.com/iphone?cid=gn-ols-iphone-psp-prodfly">iPhone Support</div></a>
+                            <div><a href="https://www.apple.com/ios/ios-17-preview/">iOS 17 Preview</div></a>
+                            <div><a href="https://www.apple.com/support/products/iphone/">AppleCare+ for iPhone</div></a>
+                            <div><a href="https://www.apple.com/privacy/">iPhone Privacy</div></a>
+                            <div><a href="https://www.apple.com/icloud/">iCloud+</div></a>
+                            <div> <a href="https://www.apple.com/wallet/">Wallet, Pay, Card</div></a>
+                            <div><a href="https://www.apple.com/siri/">Siri</div></div></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="wa">Watch
+                <div class="wat">
+                    <div class="watc">
+                        <div>Explore Watch
+                         <div class="eaw"><div><a href="https://www.apple.com/watch/">Explore All Apple Watch</div></a>
+                            <div><a href="https://www.apple.com/apple-watch-ultra/">Apple Watch Ultra</div></a>
+                            <div><a href="https://www.apple.com/apple-watch-series-8/">Apple Watch Series 8</div></a>
+                            <div><a href="https://www.apple.com/apple-watch-se/">Apple Watch SE</div></a>
+                            <div><a href="https://www.apple.com/apple-watch-nike/">Apple Watch Nike</div></a>
+                            <div><a href="https://www.apple.com/apple-watch-hermes/">Apple Watch Hermès</div></div></a>
+                            <div class="comwat">
+                                <p><a href="https://www.apple.com/watch/compare/">Compare Watch</p></a>
+                                <p><a href="https://www.apple.com/watch/why-apple-watch/">Why Apple Watch</p></a>
+                            </div>
+                        </div>
+                        <div>Shop Watch
+                            <div class="shwa">
+                            <div><a href="https://www.apple.com/shop/buy-watch">Shop Apple Watch</div></a>
+                            <div><a href="https://www.apple.com/shop/studio/apple-watch">Apple Watch Studio</div></a>
+                            <div><a href="https://www.apple.com/shop/watch/bands">Apple Watch Bands</div></a>
+                            <div><a href="https://www.apple.com/shop/watch/accessories">Apple Watch Accessories</div></a>
+                            <div><a href="https://www.apple.com/shop/trade-in">Apple Trade In</div></a>
+                            <div><a href="https://www.apple.com/shop/browse/financing">Financing</div></div></a>
+                        </div>
+                        <div>More from Watch
+                            <div class="frmwa">
+                            <div><a href="https://support.apple.com/watch?cid=gn-ols-watch-psp-prodfly">Apple Watch Support</div></a>
+                            <div><a href="https://www.apple.com/watchos/watchos-preview/">watchOS 10 Preview</div></a>
+                            <div><a href="https://www.apple.com/support/products/watch/">AppleCare+</div></a>
+                            <div><a href="https://www.apple.com/apple-fitness-plus/">Apple Fitness+</div></a>
+                        </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div>Vision</div>
+            <div class="air">AirPods
+                <div class="pod">
+                    <div class="pods">
+                        <div>Explore AirPods
+                            <div class="expod">
+                            <div><a href="https://www.apple.com/airpods/">Explore All AirPods</a></div>
+                            <div><a href="https://www.apple.com/airpods-pro/">AirPods Pro 2nd generation</div></a>
+                            <div><a href="https://www.apple.com/airpods-2nd-generation/">AirPods 2nd generation</div></a>
+                            <div><a href="https://www.apple.com/airpods-3rd-generation/">AirPods 3rd generation</div></a>
+                            <div><a href="https://www.apple.com/airpods-max/">AirPods Max</div></div></a>
+                            <div class="compod">
+                                <p><a href="https://www.apple.com/airpods/compare/">Compare AirPods</p></a>
+                            </div>
+                        </div>
+                        <div>Shop AirPods
+                            <div class="shpod">
+                                <div><a href="https://www.apple.com/shop/accessories/all/headphones-speakers?f=apple-overear-sport&fh=47d1%2B3214%2B45aa%2B45ab&page=1">Shop AirPods</div></a>
+                                <div><a href="https://www.apple.com/shop/accessories/all/headphones-speakers?f=headphoneacc&fh=47d1%2Be62115&page=1">AirPods Accessories</div></a>
+                            </div>
+                        </div>
+                        <div>More from AirPods
+                            <div class="mopod">
+                                <div><a href="https://support.apple.com/airpods?cid=gn-ols-airpods-psp-prodfly">AirPods Support</div></a>
+                                <div><a href="https://www.apple.com/support/products/headphones/">AppleCare+ for Headphones</div></a>
+                                <div><a href="https://www.apple.com/apple-music/">Apple Music</div></a>
+                            </div>
+                        </div>
+                </div>
+                </div>
+</div>
+            <div class="sst">Tv & Home 
+                <div class="tv">
+                    <div class="ttv">
+                        
+                        <div>Explore TV & Home
+                            <div class="extv"> <div><a href="https://www.apple.com/tv-home/">Explore TV & Home</div></a>
+                            <div><a href="https://www.apple.com/apple-tv-4k/">Apple TV 4K</div></a>
+                            <div><a href="https://www.apple.com/homepod-2nd-generation/">HomePod</div></a>
+                            <div><a href="https://www.apple.com/homepod-mini/">HomePod mini</div></a>
+                           </div>
+                        </div>
+                        <div>Shop TV & Home
+                          <div class="shtv"><div><a href="https://www.apple.com/shop/buy-tv/apple-tv-4k">Shop Apple TV 4K</div></a>
+                            <div><a href="https://www.apple.com/shop/buy-homepod/homepod">Shop HomePod</div></a>
+                            <div><a href="https://www.apple.com/shop/buy-homepod/homepod-mini">Shop HomePod mini</div></a>
+                            <div><a href="https://www.apple.com/shop/product/MNC73AM/A/siri-remote">Shop Siri Remote</div></a>
+                            <div><a href="https://www.apple.com/shop/smart-home/accessories">TV & Home Accessories</div></div></a>
+                        </div>
+                            <div>More from TV & Home
+                           <div class="motv"> <div><a href="https://support.apple.com/apple-tv?cid=gn-ols-appletv-psp-prodfly">Apple TV Support</div></a>
+                            <div><a href="https://support.apple.com/homepod?cid=gn-ols-homepod-psp-prodfly">HomePod Support</div></a>
+                            <div><a href="https://www.apple.com/support/products/">AppleCare+</div></a>
+                            <div><a href="https://www.apple.com/apple-tv-app/">Apple TV app</div></a>
+                            <div><a href="https://www.apple.com/apple-tv-plus/">Apple TV+</div></a>
+                            <div><a href="https://www.apple.com/home-app/">Home app</div></a>
+                            <div><a href="https://www.apple.com/apple-music/">Apple Music</div></a>
+                            <div><a href="https://www.apple.com/siri/">Siri</div></a>
+                            <div><a href="https://www.apple.com/airplay/">AirPlay</div></div></a>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="sstt">Entetainment
+                <div class="exent">
+                    <div class="expentt">
+                        <div>Explore Entertainment
+                           <div class="exment"> <div><a href="https://www.apple.com/services/">Explore Entertainment</div></a>
+                            <div><a href="https://www.apple.com/apple-one/">Apple One</div></a>
+                            <div><a href="https://www.apple.com/apple-tv-plus/">Apple TV+</div></a>
+                            <div><a href="https://www.apple.com/apple-music/">Apple Music</div></a>
+                            <div><a href="https://www.apple.com/apple-arcade/">Apple Arcade</div></a>
+                            <div><a href="https://www.apple.com/apple-fitness-plus/">Apple Fitness+</div></a>
+                            <div><a href="https://www.apple.com/apple-news/">Apple News+</div></a>
+                            <div><a href="https://www.apple.com/apple-podcasts/">Apple Podcasts</div></a>
+                            <div><a href="https://www.apple.com/apple-books/">Apple Books</div></a>
+                            <div><a href="https://www.apple.com/app-store/"></a>App Store</div></div>
+                        </div>
+                        <div>Support
+                           <div class="supp"> <div><a href="https://support.apple.com/tv?cid=gn-ols-tvplus-psp-prodfly">Apple TV+ Support</div></a>
+                            <div><a href="https://support.apple.com/music?cid=gn-ols-music-psp-prodfly">Apple Music Support</div></div></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="as">Accessories
+                <div class="ass">
+                    <div class="asss">
+                        <div>Shop Accessories
+                           <div class="shass"><div><a href="https://www.apple.com/shop/accessories/all">Shop All Accessories</div></a>
+                            <div><a href="https://www.apple.com/shop/mac/accessories">Mac</div></a>
+                            <div><a href="https://www.apple.com/shop/ipad/accessories">iPad</div></a>
+                            <div><a href="https://www.apple.com/shop/iphone/accessories">iPhone</div></a>
+                            <div><a href="https://www.apple.com/shop/watch/accessories">Apple Watch</div></a>
+                            <div><a href="https://www.apple.com/shop/accessories/all/headphones-speakers?f=apple-overear-sport&fh=47d1%2B3214%2B45aa%2B45ab&page=1">AirPods</div></a>
+                            <div><a href="https://www.apple.com/app-store/">TV & Home</div></div></a>
+                        </div>
+                        <div>Explore Accessories
+                           <div class="exass"> <a href="https://www.apple.com/shop/accessories/all/made-by-apple"><div>Made by Apple</div></a>
+                            <div><a href="https://www.apple.com/shop/accessories/all/beats-featured">Beats by Dr. Dre</div></a>
+                            <div><a href="https://www.apple.com/airtag/">AirTag</div></div></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="spt">Support
+                <div class="supp">
+                    <div class="insupp">
+                        <div>Explore Support
+                           <dix class="suppiphn"><div><a href="https://support.apple.com/iphone?cid=gn-ols-iphone-psp-explore">iPhone</a></div>
+                            <div><a href="https://support.apple.com/mac?cid=gn-ols-mac-psp-explore">Mac</div></a>
+                            <div><a href="https://www.apple.com/shop/ipad/accessories">iPad</div></a>
+                            <div><a href="https://support.apple.com/watch?cid=gn-ols-watch-psp-explore">Watch</div></a>
+                            <div><a href="https://support.apple.com/airpods?cid=gn-ols-airpods-psp-explore">AirPods</div></a>
+                            <div><a href="https://support.apple.com/music?cid=gn-ols-music-psp-explore">Music</div></a>
+                            <div><a href="https://support.apple.com/tv?cid=gn-ols-tv-psp-explore">TV</div></dix></a>
+                            <div class="smbox">
+                                <p><b><a href="https://support.apple.com/?cid=gn-ols-home-hp-explore">Explore Support</b></p></a>
+                            </div>
+                        </div>
+                        <div>Get Help
+                            <div class="gethlp"><div><a href="https://discussions.apple.com/welcome?cid=gn-com-community-lp-get_help">Community</div></a>
+                            <div><a href="https://checkcoverage.apple.com/?locale=en_US&cid=gn-ols-checkcoverage-lp-get_help">Check Coverage</div></a>
+                            <div><a href="https://support.apple.com/repair?cid=gn-ols-repair-lp-get_help">Repair</div></a>
+                            <div><a href="https://getsupport.apple.com/?caller=support.header&cid=gn-ols-contact-mgs_lp-get_help">Contact Us</div></div></a>
+                        </div>
+                        <div>Helpful Topics
+                          <div class="heltop">  <div><a href="https://www.apple.com/support/products/?cid=gn-ols-home-acpp-helpful_topics">Get AppleCare+</div></a>
+                            <div><a href="https://support.apple.com/apple-id?cid=gn-ols-appleid-psp-helpful_topics">Apple ID & Password</div></a>
+                            <div><a href="https://support.apple.com/billing?cid=gn-ols-billing-collection-helpful_topics">Billing & Subscriptions</div></a>
+                            <div><a href="https://support.apple.com/find-my?cid=gn-ols-findmy-collection-helpful_topics">Find My</div></a>
+                            <div><a href="https://support.apple.com/accessibility?cid=gn-ols-accessibility-psp-helpful_topics">Accessibility</div></div></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="ss"><div class="sea"><i class="fa-solid fa-magnifying-glass"> </i>
+                <div class="searchhh">
+                    <div><input type="text" placeholder="Search apple.com" ></div>
+                    <div class="quilink">
+                        <p>Quick Links </p>
+                    </div>
+                  <div class="arrow">
+                    <div> <i class="ar fa-solid fa-arrow-right"></i><a href="https://www.apple.com/retail/">Find a Store</div></a>
+                    <div><i class="ar fa-solid fa-arrow-right"></i><a href="https://www.apple.com/apple-vision-pro/">Apple Vision Pro</div></a>
+                    <div><i class="ar fa-solid fa-arrow-right"></i><a href="https://www.apple.com/airpods/">AirPods</div></a>
+                    <div><i class="ar fa-solid fa-arrow-right"></i><a href="https://www.apple.com/airtag/">AirTag</div></a>
+                    <div><i class="ar fa-solid fa-arrow-right"></i><a href="https://www.apple.com/shop/trade-in">Apple Trade In</div></a>
+                  </div>
+                    </div>
+                    
+           </div></div>
+            <div class="ss"><div class="bag"><i class="fa-solid fa-bag-shopping"></i>
+                <div class="bags">
+                    <div class="h1"><h1>Your Bag is empty.</h1></div>
+                    <div class="siin"><a href="https://secure5.store.apple.com/shop/signIn?ssi=1AAABinlU_6AguRGZ4LoSEvmLN1GV4C3wIjUvVQ-jO1tJ8526JMv2u1oAAAAgaHR0cHM6Ly93d3cuYXBwbGUuY29tL3Nob3AvYmFnfHwAAgHBYrW50Dq7VVoWxrIvaQ9beKhvEZg9Mwc4CmwPDaohYQ">Sign in</a> to see if you have any saved items</div>
+                    <div class="mypro">
+                        <div>My Profile</div>
+                        <div class="order">
+                            <div class="orte"> <i class="fat fa-solid fa-cube"></i><b><a href="https://secure5.store.apple.com/shop/signIn/orders?ssi=1AAABinl6Hmcg5ZedEoSsQhqSp4cIjcBe5q_qeWjTtg-A0CcczrGV0R0AAAAxaHR0cHM6Ly9zZWN1cmU1LnN0b3JlLmFwcGxlLmNvbS9zaG9wL29yZGVyL2xpc3R8fAACAS_9cpVPq6KT4pks1VaclAMlUXkBjOYzt7wqyl-36b4_">Orders</a></b></div>
+                            <div class="orte"> <i class="fat fa-regular fa-bookmark"></i><b><a href="https://secure5.store.apple.com/shop/signIn?ssi=1AAABinl6xjUgHuA3ROYukJJPMWV5i5P0bhTcLqzx2_Fd31Zdgv0xn0cAAAAmaHR0cHM6Ly93d3cuYXBwbGUuY29tL3Nob3AveW91cnNhdmVzfHwAAgG34RXdIdZVPEV5YjhwTEDpD60KCutjPiDRyG_qnEQw_w">Your Saves</a></b></div>
+                            <div class="orte"><i class="fat fa-solid fa-gear"></i><b><a href="https://secure5.store.apple.com/shop/signIn/account?ssi=1AAABinl7NhMg8cz7CKOdS6asN42sHEQ5IWDi07DOeU4wXGCbvjoG4LAAAAAzaHR0cHM6Ly9zZWN1cmU1LnN0b3JlLmFwcGxlLmNvbS9zaG9wL2FjY291bnQvaG9tZXx8AAIBM72uw6rLXHJYx_TJ7rXs8j-_2gruNy2hElKCOFqNoj0">Account</a></b></div>
+                            <div class="orte"><i class="fat fa-solid fa-user"></i><b><a href="https://secure5.store.apple.com/shop/signIn?ssi=1AAABinl7mC0gW1NRMmxFLiw7cuMtnnA0dkQWP7oyApMVybkkYKyjCzcAAAAgaHR0cHM6Ly93d3cuYXBwbGUuY29tL3Nob3AvYmFnfHwAAgET-QvtAXayBJw5mxE3Qs2NHDGhqao6hoXoulot0l-jtg">Sign in</a></b></div>
+
+                        </div>
+                      </div>
+                </div>
+            </div></div>
+        </div>
+    </div>
+    <div class="mid">
+        <div class="midtext">
+            <div class="ab">Save on Mac or iPad <p>for college.</p></div>
+           
+            <div class="abcd"><a href="https://www.apple.com/us-edu/shop/back-to-school" style="text-decoration: none; color: #0066CC;">Shop Now</a>  <i class="fa-solid fa-angle-right"></i></div>
+        </div>
+       <div class="video">
+        <video autoplay loop muted src="apple vide.mov" ></video>
+       </div>
+    </div>
+    <div class="macbook">
+            <div>MacBook Air 15"</div>
+    </div>
+    
+      <div class="mcpho">
+        <div id="a">
+            <div>Learn<i class="a fa-solid fa-angle-right"></i></div>
+            <div>Buy<i class="a fa-solid fa-angle-right"></i></div>
+        </div>
+        <div id="b">
+            <img src="macbook.jpeg" alt="">
+
+        </div>
+        <div id="c">
+            <div>
+               <img src="apple1.jpeg" ></div>
+            <div><img src="apple2.jpeg" alt=""></div>
+        </div>
+      </div>
+      </div>
+    <div class="cro">
+        <div class="crocs">
+        <div class="lef"><img src="apple img1.jpeg" alt=""></div>
+        <div class="midf"><img src="apple img4.jpeg" alt=""></div>
+        <div class="ri8"><img src="apple img7.jpeg" alt=""></div></div>
+     </div>
+  
+           
+    </div>
+    </div>
+    </div>
+    
+    </div>
+   </div>
+   
+        </body>
+<script>
+  let a=["apple img1.jpeg","apple img2.jpeg","apple img3.avif","apple img4.jpeg","apple img5.jpeg","apple img6.webp","apple img7.jpeg","apple img8.jpeg","apple img9.jpeg","apple img10.jpeg"]
+       i=0
+       function fun(){
+        i++
+        if(i>9){
+            i=0
+        }
+        let dm=document.querySelectorAll(".crocs img")
+        for(let j=0; j<dm.length;j++){
+            dm[j].src=a[(i+j)%10]
+     }
+        }
+    setInterval(fun,2000)
+      </script>
+</html>
